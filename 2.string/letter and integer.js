@@ -19,7 +19,7 @@
 
 // also when want to print both in array ------------------------------
 
-let separate = () => {
+
     let str = "rishi275"
     let onlyLetter = "";
     let onlyinteger = "";
@@ -29,20 +29,18 @@ let separate = () => {
         }
         else {
             onlyinteger = onlyinteger + str[i]
-            // return onlyinteger;
         }
 
     }
     console.log(onlyinteger.split(""))
     console.log(onlyLetter.split(""))
 
-}
-separate()
+
+
+
+
+
 /*
-
-
-Initialization:
-
 str = "rishi275"
 onlyLetter = "" (empty string)
 Iteration 1 (i=0):
