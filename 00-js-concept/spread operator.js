@@ -5,3 +5,6 @@ console.log([arr,arr2]);
 //by using spread operator we can spread like this into single array
 let arr3 = [...arr,...arr2]
 console.log(arr3);
+
+
+

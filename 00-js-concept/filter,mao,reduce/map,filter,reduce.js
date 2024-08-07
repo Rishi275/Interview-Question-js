@@ -25,17 +25,3 @@ let sum = array.reduce((prev,value, i, arr) => {
 console.log(sum); //
 
 
-//Q1. create custom map function
-
-Array.prototype.customMap = (callback) => {
-    let result = [];
-    for(let i = 0; i <this.length; i++){
-        result.push(callback(this[i], i, this));
-    }
-    return result;
-}
-
-array.customMap((value, i, arr) => {
-    value = value + 2;
-    console.log(value); //manupulated
-})

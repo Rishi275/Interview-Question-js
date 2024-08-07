@@ -2,7 +2,6 @@
 //closer Scope chaining
 
 let a = 1;
-
 function sum(b) {
     return function (c) {
         return function (d) {
