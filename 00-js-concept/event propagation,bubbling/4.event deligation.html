@@ -5,6 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #0b0b0b;
+        }
+        .products{
+            width: 50%;
+            height: 100vh;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: rgb(35, 32, 32);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* cursor: pointer; */
+        }
+        li{
+            list-style: none;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 <body>
     <div class="products">
@@ -15,5 +49,17 @@
         <li class="usb">usb</li>
         <li class="tripod">tripod</li>
     </div>
+
+
+    <script>
+        const products = document.querySelector('.products');
+
+        products.addEventListener('click',(e)=>{
+            const target = e.target;
+            if(target.tagName === 'LI'){
+                window.location.href +="/"+e.target.className;
+            }
+        })
+    </script>
 </body>
 </html>
