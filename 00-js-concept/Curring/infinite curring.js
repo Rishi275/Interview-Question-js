@@ -21,7 +21,6 @@ console.log(sum(1)(2)(3)(4)());
 // sum(1) returns a function that takes b as an argument.
 // At this point, a is 1.
 // Second Call:
-
 // javascript
 // Copy code
 // sum(1)(2)

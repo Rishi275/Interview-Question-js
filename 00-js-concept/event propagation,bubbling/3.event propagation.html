@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: black;
+        }
+
+        div {
+
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid white;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin: 20px 10px;
+            gap: 20px;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        DIV
+        <form action="">
+            FORM
+            <button>BUTTON</button>
+        </form>
+    </div>
+</body>
+<script>
+    let div = document.querySelector("div");
+    let form = document.querySelector("form");
+    let btn = document.querySelector("button");
+
+    div.addEventListener("click", (e) => {
+        e.stopPropagation()
+        alert("div");
+    })
+    form.addEventListener("click", (e) => {
+        e.stopPropagation()
+        alert("form");
+    })
+    btn.addEventListener("click", (e) => {
+        e.stopPropagation()
+        alert("button");
+    })
+
+    
+</script>
+
+</html>
