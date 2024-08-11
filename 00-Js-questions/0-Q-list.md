@@ -215,7 +215,7 @@ addTo256(40); // Returns 296
 addTo256(20); // Returns 276
 In the code above, we have written a function that adds the parameter to 256 and returns it.
 
-# 27. What is the use of a constructor function in javascript?
+# 19. What is the use of a constructor function in javascript?
 Constructor functions are used to create objects in javascript.
 
 When do we use constructor functions?
@@ -243,5 +243,102 @@ var person3 = new Person("Lilly", 17, "female");
 The above line of code will create a new object of the type Person. Constructor functions allow us to group similar objects.
 
 
-# 2. Difference between “ == “ and “ === “ operators
-# 2. Difference between “ == “ and “ === “ operators
+# 20. What are arrow functions?
+
+# 21. What is the rest parameter and spread operator?
+Both rest parameter and spread operator were introduced in the ES6 version of javascript.
+
+Rest parameter ( … ):
+
+It provides an improved way of handling the parameters of a function.
+Using the rest parameter syntax, we can create functions that can take a variable number of arguments.
+Any number of arguments will be converted into an array using the rest parameter.
+It also helps in extracting all or some parts of the arguments.
+Rest parameters can be used by applying three dots (...) before the parameters.
+
+# 22. What is the use of promises in javascript?
+Promises are used to handle asynchronous operations in javascript.
+
+Before promises, callbacks were used to handle asynchronous operations. But due to the limited functionality of callbacks, using multiple callbacks to handle asynchronous code can lead to unmanageable code.
+
+Promise object has four states -
+
+Pending - Initial state of promise. This state represents that the promise has neither been fulfilled nor been rejected, it is in the pending state.
+Fulfilled - This state represents that the promise has been fulfilled, meaning the async operation is completed.
+Rejected - This state represents that the promise has been rejected for some reason, meaning the async operation has failed.
+Settled - This state represents that the promise has been either rejected or fulfilled.
+A promise is created using the Promise constructor which takes in a callback function with two parameters, resolve and reject respectively.
+
+resolve is a function that will be called when the async operation has been successfully completed.
+reject is a function that will be called, when the async operation fails or if some error occurs.
+
+then() method is used to access the result when the promise is fulfilled.
+
+catch() method is used to access the result/error when the promise is rejected. In the code below, we are consuming the promise:
+
+sumOfThreeElements(4, 5, 6)
+.then(result=> console.log(result))
+.catch(error=> console.log(error));
+// In the code above, the promise is fulfilled so the then() method gets executed
+
+sumOfThreeElements(7, 0, 33, 41)
+.then(result => console.log(result))
+.catch(error=> console.log(error));
+// In the code above, the promise is rejected hence the catch() method gets executed
+
+# 23. Explain WeakSet in javascript.
+In javascript, a Set is a collection of unique and ordered elements. Just like Set, WeakSet is also a collection of unique and ordered elements with some key differences:
+
+Weakset contains only objects and no other type.
+An object inside the weakset is referenced weakly. This means, that if the object inside the weakset does not have a reference, it will be garbage collected.
+Unlike Set, WeakSet only has three methods, add() , delete() and has() .
+const newSet = new Set([4, 5, 6, 7]);
+console.log(newSet);// Outputs Set {4,5,6,7}
+
+const newSet2 = new WeakSet([3, 4, 5]); //Throws an error
+
+
+let obj1 = {message:"Hello world"};
+const newSet3 = new WeakSet([obj1]);
+console.log(newSet3.has(obj1)); // true
+
+
+# 24. Why do we use callbacks?
+A callback function is a method that is sent as an input to another function (now let us name this other function "thisFunction"), and it is performed inside the thisFunction after the function has completed execution.
+
+JavaScript is a scripting language that is based on events. Instead of waiting for a reply before continuing, JavaScript will continue to run while monitoring for additional events. Callbacks are a technique of ensuring that a particular code does not run until another code has completed its execution
+
+# 25. Explain WeakMap in javascript.
+In javascript, Map is used to store key-value pairs. The key-value pairs can be of both primitive and non-primitive types. WeakMap is similar to Map with key differences:
+
+The keys and values in weakmap should always be an object.
+If there are no references to the object, the object will be garbage collected.
+const map1 = new Map();
+map1.set('Value', 1);
+
+const map2 = new WeakMap();
+map2.set('Value', 2.3); // Throws an error
+
+let obj = {name:"Vivek"};
+const map3 = new WeakMap();
+map3.set(obj, {age:23});
+
+
+# 26. What is Object Destructuring?
+
+# 20. What are arrow functions?
+# 20. What are arrow functions?
+# 20. What are arrow functions?
+
+
+
+
+
+
+
+
+
+
+
+
+
