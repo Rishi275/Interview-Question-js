@@ -326,9 +326,32 @@ map3.set(obj, {age:23});
 
 # 26. What is Object Destructuring?
 
+# 27. What is a Temporal Dead Zone?
+Temporal Dead Zone is a behaviour that occurs with variables declared using let and const keywords. It is a behaviour where we try to access a variable before it is initialized. Examples of temporal dead zone:
+# 26. Is JavaScript a pass-by-reference or pass-by-value language?
+The variable's data is always a reference for objects, hence it's always pass by value. As a result, if you supply an object and alter its members inside the method, the changes continue outside of it. It appears to be pass by reference in this case. However, if you modify the values of the object variable, the change will not last, demonstrating that it is indeed passed by value
+
+# 27. Difference between Async/Await and Generators usage to achieve the same functionality.
+Generator functions are run by their generator yield by yield which means one output at a time, whereas Async-await functions are executed sequentially one after another.
+Async/await provides a certain use case for Generators easier to execute.
+The output result of the Generator function is always value: X, done: Boolean, but the return value of the Async function is always an assurance or throws an error
+
+
+# 28. What are the primitive data types in JavaScript?
+A primitive is a data type that isn't composed of other data types. It's only capable of displaying one value at a time. By definition, every primitive is a built-in data type (the compiler must be knowledgeable of them) nevertheless, not all built-in datasets are primitives. In JavaScript, there are 5 different forms of basic data. The following values are available:
+
+1.Boolean
+
+2.Undefined
+
+3.Null
+
+4.Number
+
+5.String
+
 # 20. What are arrow functions?
-# 20. What are arrow functions?
-# 20. What are arrow functions?
+
 
 
 
