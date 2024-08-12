@@ -10,4 +10,3 @@ function Person(name,age,gender){
   
   var person2 = new Person("Courtney", 34, "female");
   console.log(person2);
-  

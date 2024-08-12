@@ -1,8 +1,8 @@
 // promise is like doing some task if happens according to promise than 
 
-/*
+
 let news = async () => {
-    let response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=a787227847104588bbf3d69917d4398c&page1&pageSize=`4');
+    let response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=a787227847104588bbf3d69917d4398c&page1&pageSize=`1');
      let  data = await response.json();
    console.log(data);
 }
@@ -27,7 +27,12 @@ promise.then((res)=>{
    console.error("Fetching  failed")
 })
 
-*/
+
+
+
+
+
+
 // ------------------------------------Promise Chaining----------------------------------------------------------------
 
 /*
