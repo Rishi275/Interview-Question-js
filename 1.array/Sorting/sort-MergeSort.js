@@ -10,7 +10,6 @@ Merge: The merge step, where two sorted halves are combined, takes linear time, 
 
  time complexity = T(n)=O(nlogn)
  space complexity = o(n)
-
 */
 
 
