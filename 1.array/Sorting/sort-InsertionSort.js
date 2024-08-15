@@ -9,7 +9,7 @@ function InsertionSort(arr) {
         }
         arr[j + 1] = key;
     }
-    return arr
+    return arr;
 }
 
 let array = [3, 5, 7, 9, 5, 2, -3];
