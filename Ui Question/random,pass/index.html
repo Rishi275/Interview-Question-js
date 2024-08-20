@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: rgb(40, 110, 23);
+        }
+
+        .main {
+            width: 70vw;
+            margin: 0 auto;
+            height: auto;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 10vh;
+        }
+
+        .input_range {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            background-color: black;
+            color: white;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .input_range input{
+            width: 100%;
+        }
+        .checkboxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            color: white;
+        }
+
+        .generate {
+            width: 90%;
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .copy_pass {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .copy_pass .copy {
+            height: 40px;
+            padding: 0px 10px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+        }
+     
+        .copy_pass .copy:active{
+            background-color:transparent;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="input_range">
+            <input type="range" min="4" max="20" value="4">
+            <span>0</span>
+        </div>
+        <div class="checkboxes">
+            <div class="content">
+                <input class="upper" type="checkbox"><label for="">Uppercase</label>
+            </div>
+            <div class="content">
+                <input class="lower" type="checkbox"><label for="">Lowercase</label>
+            </div>
+            <div class="content">
+                <input class="number" type="checkbox"><label for="">Numbers</label>
+            </div>
+            <div class="content">
+                <input class="symbol" type="checkbox"><label for="">Symbols</label>
+
+            </div>
+        </div>
+
+        <h3 id="error" style="color: red; display: none;">Please Select At Least One Character Type</h3>
+        <button class="generate">Generate</button>
+        <div class="copy_pass">
+            <h1>@.9]]\79</h1>
+            <button class="copy">Copy</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="passRadom.js"></script>
+</body>
+
+</html>
