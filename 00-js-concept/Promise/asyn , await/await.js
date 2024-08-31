@@ -22,7 +22,7 @@ async function getData() {
     console.log("after await p1")
 
     let reponse2 = await p2; // it takes less time tahn promise p1 but execute later because of await =>it holds the execution for p1;
-    
+
     console.log(reponse2); //output  //  before await p1
                                      //  after await p1
                                      //  p2 resolve successfully
@@ -30,3 +30,4 @@ async function getData() {
 
 }
 getData();
+
